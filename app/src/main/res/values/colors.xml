@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tab_indicator_line_color">#3376ff</color>
+    <color name="base_color">#2878FF</color>
+    <color name="bg_spinner_title">#e6616161</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_dddddd">#ffdddddd</color>
+
+    <color name="nav_user_head">#F2F5F9</color>
+
+</resources>

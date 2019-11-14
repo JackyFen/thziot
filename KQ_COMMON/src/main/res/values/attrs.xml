@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextItemLayout">
+        <attr name="ctlLabel" format="string" />
+        <attr name="ctlLabelColor" format="color" />
+        <attr name="ctlHint" format="string" />
+        <attr name="ctlHintColor" format="color" />
+        <attr name="ctlAttachText" format="string" />
+        <attr name="ctlAttachImgSrc" format="reference" />
+        <attr name="ctlAttachTextBg" format="reference" />
+        <attr name="ctlShowLine">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="both" value="3" />
+            <enum name="none" value="4" />
+        </attr>
+        <attr name="ctlAttachType">
+            <enum name="text" value="11" />
+            <enum name="image" value="12" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EditItemLayout">
+        <attr name="celLabel" format="string" />
+        <attr name="celLabelColor" format="color" />
+        <attr name="celHint" format="string" />
+        <attr name="celHintColor" format="color" />
+        <attr name="celAttachText" format="string" />
+        <attr name="celAttachImgSrc" format="reference" />
+        <attr name="celAttachTextBg" format="reference" />
+        <attr name="celShowLine">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="both" value="3" />
+            <enum name="none" value="4" />
+        </attr>
+        <attr name="celAttachType">
+            <enum name="text" value="11" />
+            <enum name="image" value="12" />
+        </attr>
+        <attr name="android:inputType" />
+        <attr name="android:lines" />
+        <attr name="android:maxLines" />
+        <attr name="android:imeOptions"/>
+        <attr name="android:digits"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconTextItemLayout">
+        <attr name="itlIcon" format="reference" />
+        <attr name="itlText" format="string" />
+        <attr name="itlTextSize" format="dimension" />
+        <attr name="itlTextColor" format="color" />
+        <attr name="itlShowLine">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="both" value="3" />
+            <enum name="none" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IconEditItemLayout">
+        <attr name="cielIcon" format="reference" />
+        <attr name="cielIconWidth" format="dimension" />
+        <attr name="cielIconHeight" format="dimension" />
+        <attr name="cielEditText" format="string" />
+        <attr name="cielEditTextColor" format="string" />
+        <attr name="cielEditTextSize" format="integer" />
+        <attr name="cielHint" format="string" />
+        <attr name="cielHintColor" format="color" />
+        <attr name="cielAttachText" format="string" />
+        <attr name="cielAttachTextColor" format="color" />
+        <attr name="cielBtWidth" format="dimension" />
+        <attr name="cielBtHeight" format="dimension" />
+        <attr name="cielAttachImgSrc" format="reference" />
+        <attr name="cielAttachType">
+            <enum name="button" value="11" />
+            <enum name="image" value="12" />
+        </attr>
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="fit_system_windows">
+        <attr name="padding_status" format="boolean"/>
+        <attr name="status_color" format="color"/>
+        <attr name="padding_navigation" format="boolean"/>
+        <attr name="margin_status" format="boolean"/>
+        <attr name="margin_navigation" format="boolean"/>
+    </declare-styleable>
+</resources>

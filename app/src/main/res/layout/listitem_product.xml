@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kq.platform.kq_common.ui.widget.SquareRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_product_entrance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_product_entrance"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/tv_product_entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/default_text_color" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_product_del"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/icon_product_del"/>
+
+    <ImageView
+        android:id="@+id/iv_has_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@mipmap/icon_has_manage"/>
+
+</com.kq.platform.kq_common.ui.widget.SquareRelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wb_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/web_progress_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:max="100" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/web_error_container"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_web_error" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面加载失败"
+            android:textSize="14sp"
+            android:textColor="@color/gray_9"
+            />
+
+        <Button
+            android:id="@+id/btn_restart_web"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_33dp"
+            android:layout_marginRight="@dimen/margin_33dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/bg_base_button"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="重新加载" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

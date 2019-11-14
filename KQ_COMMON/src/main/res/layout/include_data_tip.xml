@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+   <ImageView
+       android:id="@+id/iv_tip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/margin_10dp"
+       android:layout_centerInParent="true"
+       android:src="@mipmap/icon_loading" />
+
+   <TextView
+       android:id="@+id/tv_tip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/txt_data_loading"
+       android:layout_below="@+id/iv_tip"
+       android:layout_centerInParent="true" />
+
+   <TextView
+       android:id="@+id/btn_retry"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="@string/txt_retry"
+       android:textSize="@dimen/font_size_main_text"
+       android:textColor="@color/white"
+       android:layout_marginTop="@dimen/margin_10dp"
+       android:layout_below="@+id/tv_tip"
+       android:layout_centerInParent="true"
+       android:background="@drawable/bg_retry_btn_selector"
+       android:paddingStart="@dimen/margin_20dp"
+       android:paddingEnd="@dimen/margin_20dp"
+       android:paddingTop="@dimen/margin_6dp"
+       android:paddingBottom="@dimen/margin_6dp" />
+
+</RelativeLayout>

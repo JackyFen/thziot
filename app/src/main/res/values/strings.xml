@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">物久联APP</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <!-- 登录 -->
+    <string name="txt_login_title">登录烟雾警报器管理</string>
+    <string name="txt_login_account">账号</string>
+    <string name="txt_login_password">密码</string>
+    <string name="txt_login">立即登录</string>
+    <string name="txt_logout">退出登录</string>
+    <string name="txt_forgot_password">忘记密码</string>
+    <string name="txt_no_account">没有账号？</string>
+    <string name="txt_register">立即注册</string>
+
+    <string name="hint_login_username">请输入登录账号</string>
+    <string name="hint_login_password">请输入登录密码</string>
+
+    <string name="digits_login_username">0123456789abcdefghijklmnopqrstuvwxyz</string>
+
+    <!-- 主界面 -->
+    <string name="txt_alarm_message">监控报警</string>
+    <string name="txt_available_product">可使用产品</string>
+    <string name="txt_my_work_order">我的工单</string>
+    
+    <string name="txt_nav_secure">安全中心</string>
+    <string name="txt_nav_my_wallet">我的钱包</string>
+    <string name="txt_nav_addr_manage">地址管理</string>
+    <string name="txt_nav_work_order">工单管理</string>
+    <string name="txt_nav_about_us">关于我们</string>
+
+    <string name="txt_product_add">添加</string>
+
+
+    <string name="txt_main_title">物久联</string>
+
+
+
+</resources>

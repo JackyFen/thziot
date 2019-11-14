@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"/>
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/scan_mask">
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:onClick="btn"
+            android:src="@mipmap/s_left_jiantou"/>
+
+        <ImageView
+            android:id="@+id/top_mask"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:alpha="0.5"
+            android:onClick="btn"
+            android:src="@mipmap/s_light"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@mipmap/capture"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@+id/capture_preview"
+        app:layout_constraintStart_toStartOf="@+id/capture_preview"
+        app:layout_constraintTop_toBottomOf="@+id/rl_title">
+
+        <ImageView
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/kakalib_scan_ray"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scan_help"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/scan_mask"
+        android:onClick="btn"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="@+id/capture_preview"
+        app:layout_constraintTop_toBottomOf="@+id/capture_crop_layout">
+
+        <TextView
+
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="二维码"
+            android:textColor="#DBD5D5" />
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="条形码"
+            android:textColor="#DBD5D5" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/scan_mask"
+        app:layout_constraintBottom_toTopOf="@+id/ll_scan_help"
+        app:layout_constraintEnd_toStartOf="@+id/capture_crop_layout"
+        app:layout_constraintStart_toStartOf="@+id/capture_preview"
+        app:layout_constraintTop_toTopOf="@+id/capture_crop_layout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/scan_mask"
+        app:layout_constraintBottom_toTopOf="@+id/ll_scan_help"
+        app:layout_constraintEnd_toEndOf="@+id/capture_preview"
+        app:layout_constraintStart_toEndOf="@+id/capture_crop_layout"
+        app:layout_constraintTop_toTopOf="@+id/capture_crop_layout" />
+
+</android.support.constraint.ConstraintLayout>

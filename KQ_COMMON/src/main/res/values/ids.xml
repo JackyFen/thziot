@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edit_item_attach_text" type="id"/>
+    <item name="edit_item_attach_img" type="id"/>
+    <item name="text_item_attach_text" type="id"/>
+    <item name="text_item_attach_img" type="id"/>
+</resources>

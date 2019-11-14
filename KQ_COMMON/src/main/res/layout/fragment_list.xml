@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_tip"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="100dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_error"-->
+                <!--android:layout_width="128dp"-->
+                <!--android:layout_height="128dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_tip"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/txt_data_empty"-->
+                <!--style="@style/ThemeCommonTextView"-->
+                <!--android:paddingStart="12dp"-->
+                <!--android:paddingEnd="12dp"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_retry"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/txt_retry"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/bg_retry_btn_selector"-->
+                <!--android:paddingStart="12dp"-->
+                <!--android:paddingEnd="12dp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <include layout="@layout/include_data_tip"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
